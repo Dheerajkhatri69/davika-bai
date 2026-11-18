@@ -139,7 +139,7 @@ export const DEFAULT_PORTFOLIO_ITEMS: PortfolioItem[] = [
   {
     id: 'mouse-product-design',
     title: 'Modern Mouse Product Advertisement',
-    category: 'Product Design',
+    category: 'Marketing & Video',
     year: '2025',
     clientOrIssuer: 'Personal Portfolio Project',
     summary:
@@ -150,7 +150,7 @@ export const DEFAULT_PORTFOLIO_ITEMS: PortfolioItem[] = [
   {
     id: 'shoes-advertisement',
     title: 'Footwear Product Advertising Design',
-    category: 'Advertising',
+    category: 'Marketing & Video',
     year: '2025',
     clientOrIssuer: 'Personal Portfolio Project',
     summary:
@@ -161,7 +161,7 @@ export const DEFAULT_PORTFOLIO_ITEMS: PortfolioItem[] = [
   {
     id: 'headphones-product-design',
     title: 'Headphones Product Advertisement',
-    category: 'Product Design',
+    category: 'Marketing & Video',
     year: '2025',
     clientOrIssuer: 'Personal Portfolio Project',
     summary:
@@ -172,12 +172,45 @@ export const DEFAULT_PORTFOLIO_ITEMS: PortfolioItem[] = [
   {
     id: 'ice-cream-advertisement',
     title: 'Ice Cream Promotional Design',
-    category: 'Food Advertising',
+    category: 'Marketing & Video',
     year: '2025',
     clientOrIssuer: 'Personal Portfolio Project',
     summary:
       'Attractive ice cream promotional design featuring a refreshing food-focused visual style and appealing advertising composition.',
     deliverables: 'Food Advertisement · Product Promotion · Social Media Design',
     imageUrl: '/src/assets/images/ice-cream.jpg',
+  },
+  {
+    id: 'freelancing-training-certificate',
+    title: 'Freelancing Course Training Certificate',
+    category: 'Certificates',
+    year: '2026',
+    clientOrIssuer: 'DigiSkills Training Program (Ministry of IT & Telecom, Ignite, VU)',
+    summary:
+      'Successful completion of the Freelancing course under DSTP3.0-Batch-03, verified by DigiSkills.pk, virtual university and Ignite.',
+    deliverables: 'Training Certificate · Professional Skills Development · Freelancing',
+    imageUrl: '/src/assets/images/freelancing-certificate.jpg',
+  },
+  {
+    id: 'video-editing-animation-certificate',
+    title: 'Video Editing, Animation & Vlogging Certificate',
+    category: 'Certificates',
+    year: '2026',
+    clientOrIssuer: 'DigiSkills Training Program (Ministry of IT & Telecom, Ignite, VU)',
+    summary:
+      'Professional training certificate for completing Video Editing, Animation, and Vlogging course under DSTP3.0-Batch-03, DigiSkills.pk.',
+    deliverables: 'Training Certificate · Video Editing · Animation · Vlogging',
+    imageUrl: '/src/assets/images/video-editing-certificate.jpg',
+  },
+  {
+    id: 'graphic-design-internship-certificate',
+    title: 'Graphic Design Remote Internship Certificate',
+    category: 'Certificates',
+    year: '2026',
+    clientOrIssuer: 'Primelink Management Solutions',
+    summary:
+      'Certificate of Internship recognizing successful completion of a Remote Internship as a Graphic Designer, demonstrating creativity, dedication, and quality output.',
+    deliverables: 'Internship Certificate · Graphic Design · Work Experience · Remote Job',
+    imageUrl: '/src/assets/images/internship-certificate.jpg',
   },
 ];

@@ -7,6 +7,7 @@ import {
   mergeSavedItems,
   type PortfolioItem,
 } from './portfolioLogic';
+import { DEFAULT_PORTFOLIO_ITEMS } from '../data/portfolioData';
 
 const SAMPLE_ITEMS: PortfolioItem[] = [
   {
@@ -54,6 +55,18 @@ test('filterPortfolioItems filters accurately by specific category', () => {
   const certificatesOnly = filterPortfolioItems(SAMPLE_ITEMS, 'Certificates');
   assert.equal(certificatesOnly.length, 1);
   assert.equal(certificatesOnly[0].id, '3');
+});
+
+test('default portfolio items use categories supported by the filter controls', () => {
+  const marketingItems = filterPortfolioItems(DEFAULT_PORTFOLIO_ITEMS, 'Marketing & Video');
+  const certificateItems = filterPortfolioItems(DEFAULT_PORTFOLIO_ITEMS, 'Certificates');
+
+  assert.equal(marketingItems.length, 4);
+  assert.equal(certificateItems.length, 3);
+  assert.equal(
+    filterPortfolioItems(DEFAULT_PORTFOLIO_ITEMS, 'All').length,
+    marketingItems.length + certificateItems.length,
+  );
 });
 
 test('validateContactForm rejects empty or invalid inputs and passes valid submission', () => {
